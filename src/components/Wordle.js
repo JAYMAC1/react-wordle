@@ -8,7 +8,13 @@ const Wordle = ({ solution }) => {
     window.addEventListener('keyup', handleKeyUp)
     return () => window.removeEventListener('keyup', handleKeyUp)
   }, [handleKeyUp])
-  return <div>Current guess: {currentGuess}</div>
+
+  return (
+    <>
+      <div>Solution: {solution}</div>
+      <div>Current guess: {currentGuess}</div>
+    </>
+  )
 }
 
 export default Wordle
