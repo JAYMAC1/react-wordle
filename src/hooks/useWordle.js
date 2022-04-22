@@ -10,6 +10,8 @@ const useWordle = (solution) => {
   // format a guess into an array of letter objects
   // e.g. [{key: 'a', color: 'yellow'}]
   const formatGuess = () => {
+    let solutionArray = [...solution] // convert string into an array of letters
+    let formattedGuess = [...currentGuess]
     console.log(`formatting the guess ${currentGuess}`)
   }
 
@@ -46,6 +48,8 @@ const useWordle = (solution) => {
       return
     }
 
+    // Using RegEx to check if key press is only a char
+    // between a and z (upper and lowercase)
     if (/^[A-Za-z]$/.test(key)) {
       if (currentGuess.length < 5) {
         setCurrentGuess((prevState) => {
