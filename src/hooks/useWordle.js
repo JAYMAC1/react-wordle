@@ -94,7 +94,6 @@ const useWordle = (solution) => {
       }
     }
   }
-  console.log(guesses)
   return { turn, currentGuess, guesses, isCorrect, handleKeyUp }
 }
 
