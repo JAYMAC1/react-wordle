@@ -12,9 +12,9 @@ const Wordle = ({ solution }) => {
     return () => window.removeEventListener('keyup', handleKeyUp)
   }, [handleKeyUp])
 
-  useEffect(() => {
-    console.log(guesses, turn, isCorrect)
-  }, [guesses, turn, isCorrect])
+  // useEffect(() => {
+  //   console.log(guesses, turn, isCorrect)
+  // }, [guesses, turn, isCorrect])
 
   return (
     <>

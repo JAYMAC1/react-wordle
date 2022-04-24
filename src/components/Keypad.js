@@ -9,7 +9,6 @@ const Keypad = () => {
       .then((json) => setLetters(json))
   }, [])
 
-  console.log('letters:', letters)
   return (
     <div className='keypad'>
       {letters &&
